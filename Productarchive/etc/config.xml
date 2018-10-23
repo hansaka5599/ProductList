@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommistry_Productarchive>
+            <version>0.1.0</version>
+        </Ecommistry_Productarchive>
+    </modules>
+    <global>
+        <resources>
+            <ecommistry_productarchive_setup>
+                <setup>
+                    <module>Ecommistry_Productarchive</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </ecommistry_productarchive_setup>
+        </resources>
+    </global>
+    <frontend>
+        <routers>
+            <catalog>
+                <args>
+                    <modules>
+                        <ecommistry_productarchive before="Mage_Catalog">Ecommistry_Productarchive</ecommistry_productarchive>
+                    </modules>
+                </args>
+            </catalog>
+        </routers>
+    </frontend>
+</config>
